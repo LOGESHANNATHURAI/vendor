@@ -1,0 +1,177 @@
+BrowserName firefox
+FirefoxDriver webdriver.gecko.driver
+FirefoxDriverPath ./Drivers/geckodriver.exe
+
+ChromeDriver webdriver.chrome.driver
+ChromeDriverPath ./Drivers/chromedriver.exe
+
+EdgeDriver webdriver.edge.driver
+EdgeDriverPath ./Drivers/msedgedriver.exe
+
+URL http://13.232.184.195:3000/login
+mobileno 8778544520
+invalidmobileno 877854452
+password 1234567
+invalidpassword 123456
+recovermobileno 8778544520
+newpassword 0987654
+wrongnewpassword 098765
+confirmpassword 0987654
+wrongconfirmpassword 098765
+currentpassword 1234567
+wrongcurrentpassword 123456
+supervisorname logu
+supervisoremailid logesh@gmail.com
+supervisorcontactno 9876543210
+profileimage C:\\Users\\Admin\\Downloads\\01badminton.jpg
+vendorbanner C:\\Users\\Admin\\Downloads\\02badminton.jpg
+galleryimage C:\\Users\\Admin\\Downloads\\03badminton.jpg
+viewbookingfromdate 09/10/2023
+viewbookingtodate 20/12/2023
+payhryfromdate 01/10/2023 
+payhrytodate 20/12/2023 
+EFromdate 01/10/2023 
+ETodate 20/12/2023
+bookingdate 01/10/2023
+ReportFromdate 01/10/2023
+ReportTodate 20/12/2023
+complaintcomment This is not a Actual complaint, For a Testing purpose only 
+Comment This is not a Actual Comment, For a Testing purpose only
+Slotstartdate 02
+Slotenddate 03
+SlotMonthAndYear February 2024
+
+ScrollRate window.scrollBy(0,550)
+
+DashboardDate 27
+DashboardMonthYear January 2024
+
+BookingsStartDate 01
+BookingsEndDate 28
+BookingsMonthAndYear February 2024
+
+BookingsStartDateAs1 01
+BookingsEndDateAs1 01
+
+Slotstartdatemanual 10
+Slotenddatemanual 11
+SlotMonthAndYearManual March 2024
+slotstarttimemanual 0600a
+slotendtimemanual 1200p
+
+ShopName Log
+
+OfferMonthAndYear March 2024
+Offerstartdate 07
+Offerenddate 08
+
+OfferMonthAndYearHH February 2024
+OfferstartdateHH 01
+OfferenddateHH 14
+
+Slotstartdate2 12
+Slotenddate2 18
+SlotMonthAndYear2 January 2024
+slotstarttime2 0600a
+slotendtime2 0600p
+durationinmin2 720
+noofcourts2 99
+cost2 999999
+
+Slotstartdate3 12
+Slotenddate3 12
+SlotMonthAndYear3 March 2024
+slotstarttime3 1200p
+slotendtime3 0300p
+
+SlotMonthAndYear4 March 2024
+Slotstartdate4 09
+Slotenddate4 09
+slotstarttime4 0100p
+slotendtime4 0300p
+
+SlotstartdateAllDays 02
+SlotenddateAllDays 08
+
+SlotstartdateWeekEnds 17
+SlotenddateWeekEnds 18
+SlotMonthAndYearWeekEnds February 2024
+
+SlotstartdateWeekDays 12
+SlotenddateWeekDays 16
+SlotMonthAndYearWeekDays February 2024
+
+SlotBlockDate 14
+SlotBlockFromDate 14
+SlotBlockToDate 14
+SlotBlockDateMonthYear February 2024
+
+SlotUnBlockDate 14
+SlotUnBlockFromDate 14
+SlotUnBlockToDate 14
+SlotUnBlockDateMonthYear February 2024
+
+Membership://////////////
+MembershipName Test01
+NoOfBookingsPerDay 45
+MaximumAllowed 11
+Guidelines Testing for membership
+ExpiryDate 17
+MonthYear February 2024
+NewCost 11
+
+Courses:///////////////
+CourseSlotDate 12
+CourseSlotMonthAndYear February 2024
+CourseName Test course 01
+MaxAllowed 13
+CourseStartDate 07
+CourseEndDate 27
+CourseMonthYear March 2024
+CourseStartTime 1000a
+CourseEndTime 0500p
+CourseCost 17
+CourseGuidelines This is not an actual guideline. Testing purpose only
+CourseCost1 18
+CourseEndTimeUpdate 0600p
+
+
+
+DiscountPercentage 52
+maxDiscountAmt 401
+UsageLimit 2
+UsageLimit1 3
+noofslots 8
+slotstarttime 0900a
+slotendtime 0800p
+durationinmin 60
+cost 10
+cost1 11
+SlotCount 3
+slotstarttime1 0900a
+slotendtime1 0930a
+
+HappyHoursStartTime 0900a
+HappyHoursEndTime 1100a
+customername LOGESH.A
+
+OfferStartDate 07
+OfferEndDate 13
+OfferMonthAndYear February 2024
+
+
+InvalidOTP 123456
+supervisorname Testing Create
+supervisormailid info@g.com
+supervisorcontactno 1234567890
+
+supervisorname1 Testing Create1
+supervisormailid1 info45@gmail.com
+supervisorcontactno1 1234567898
+
+existingsupervisormailid logeshlogesh85664@gmail.com
+wrongsupervisormailid testing@pys
+
+
+supervisorexistingcontactno 8778544520
+pastdayvalue 27
