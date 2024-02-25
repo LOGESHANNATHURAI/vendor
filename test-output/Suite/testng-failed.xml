@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="vendorLogin.AvailBookings">
+        <methods>
+          <include name="windowClose"/>
+          <include name="weblogin"/>
+          <include name="AvailBookings3"/>
+          <include name="AvailBookings2"/>
+        </methods>
+      </class> <!-- vendorLogin.AvailBookings -->
+      <class name="vendorLogin.ReportGeneration">
+        <methods>
+          <include name="weblogin"/>
+          <include name="VendorWiseReoprt1"/>
+          <include name="windowClose"/>
+        </methods>
+      </class> <!-- vendorLogin.ReportGeneration -->
+      <class name="vendorLogin.Payments">
+        <methods>
+          <include name="weblogin"/>
+          <include name="Payments1"/>
+          <include name="Payments2"/>
+          <include name="windowClose"/>
+        </methods>
+      </class> <!-- vendorLogin.Payments -->
+      <class name="vendorLogin.PYSDashBoard">
+        <methods>
+          <include name="DashboardBookingsDropDown1"/>
+          <include name="DashboardBookingsDropDown2"/>
+          <include name="weblogin"/>
+          <include name="windowClose"/>
+        </methods>
+      </class> <!-- vendorLogin.PYSDashBoard -->
+      <class name="vendorLogin.Bookings">
+        <methods>
+          <include name="ViewBookings4"/>
+          <include name="windowClose"/>
+          <include name="weblogin"/>
+        </methods>
+      </class> <!-- vendorLogin.Bookings -->
+      <class name="vendorLogin.Offers">
+        <methods>
+          <include name="ViewOfferFlatOfferUpcoming"/>
+          <include name="windowClose"/>
+          <include name="ActionButtonForFirstTimeOffer"/>
+          <include name="ActionButtonForSlotOffer"/>
+          <include name="CreateHappyHoursForAll"/>
+          <include name="ActionButtonForHappyHours"/>
+          <include name="CreateHappyHoursForParticular"/>
+          <include name="weblogin"/>
+          <include name="ActionButtonForAdjacentOffer"/>
+          <include name="ActionButtonForFlatOffer"/>
+        </methods>
+      </class> <!-- vendorLogin.Offers -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

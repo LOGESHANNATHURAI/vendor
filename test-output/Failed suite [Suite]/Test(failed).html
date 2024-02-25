@@ -1,0 +1,364 @@
+<html>
+<head>
+<title>TestNG:  Test(failed)</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test(failed)</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>22/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jan 10 12:08:11 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>503 seconds (503377 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='vendorLogin.Offers.CreateSlotOfferForParticular()'><b>CreateSlotOfferForParticular</b><br>Test class: vendorLogin.Offers</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;p class=&quot;MuiTypography-root MuiTypography-body1 css-jd79pv&quot;&gt; is not clickable at point (425,405) because another element &lt;p class=&quot;MuiTypography-root MuiTypography-body1 css-k36ljx&quot;&gt; obscures it
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9fe14eb3-db0c-4489-8d45-98b9fb484089, clickElement {id=182c9265-562c-40fa-b7a3-17ec638aab5c}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:11569, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12516, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11569/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on windows (9fe14eb3-db0c-4489-8d45-98b9fb484089)] -&gt; xpath: //p[text()=&apos;Publish Offer&apos;]]
+Session ID: 9fe14eb3-db0c-4489-8d45-98b9fb484089
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at vendorLogin.Offers.CreateSlotOfferForParticular(Offers.java:159)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace20084184", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace20084184'><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;p class=&quot;MuiTypography-root MuiTypography-body1 css-jd79pv&quot;&gt; is not clickable at point (425,405) because another element &lt;p class=&quot;MuiTypography-root MuiTypography-body1 css-k36ljx&quot;&gt; obscures it
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9fe14eb3-db0c-4489-8d45-98b9fb484089, clickElement {id=182c9265-562c-40fa-b7a3-17ec638aab5c}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:11569, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12516, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:11569/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on windows (9fe14eb3-db0c-4489-8d45-98b9fb484089)] -&gt; xpath: //p[text()=&apos;Publish Offer&apos;]]
+Session ID: 9fe14eb3-db0c-4489-8d45-98b9fb484089
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at vendorLogin.Offers.CreateSlotOfferForParticular(Offers.java:159)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>vendorLogin.Offers@793f29ff</td></tr>
+<tr>
+<td title='vendorLogin.Slots.UnBlockSlotsMultiple()'><b>UnBlockSlotsMultiple</b><br>Test class: vendorLogin.Slots</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth css-1aih38u&quot; type=&quot;button&quot;&gt; is not clickable at point (1082,219) because another element &lt;span class=&quot;MuiTypography-root MuiTypography-caption MuiDayPicker-weekDayLabel css-1hri1qj&quot;&gt; obscures it
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [58102755-9819-4337-80b5-81a9c10fa1de, clickElement {id=c11a6d1d-b31c-49ee-9c9d-a6617052e10c}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:31060, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7368, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:31060/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on windows (58102755-9819-4337-80b5-81a9c10fa1de)] -&gt; xpath: //button[normalize-space()=&apos;Multiple UnBlock&apos;]]
+Session ID: 58102755-9819-4337-80b5-81a9c10fa1de
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at vendorLogin.Slots.UnBlockSlotsMultiple(Slots.java:321)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1329897103", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1329897103'><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth css-1aih38u&quot; type=&quot;button&quot;&gt; is not clickable at point (1082,219) because another element &lt;span class=&quot;MuiTypography-root MuiTypography-caption MuiDayPicker-weekDayLabel css-1hri1qj&quot;&gt; obscures it
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [58102755-9819-4337-80b5-81a9c10fa1de, clickElement {id=c11a6d1d-b31c-49ee-9c9d-a6617052e10c}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:31060, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7368, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:31060/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on windows (58102755-9819-4337-80b5-81a9c10fa1de)] -&gt; xpath: //button[normalize-space()=&apos;Multiple UnBlock&apos;]]
+Session ID: 58102755-9819-4337-80b5-81a9c10fa1de
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at vendorLogin.Slots.UnBlockSlotsMultiple(Slots.java:321)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>vendorLogin.Slots@65c7a252</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='vendorLogin.Offers.ViewOfferAdjacentOfferActive()'><b>ViewOfferAdjacentOfferActive</b><br>Test class: vendorLogin.Offers</td>
+<td></td>
+<td>2</td>
+<td>vendorLogin.Offers@793f29ff</td></tr>
+<tr>
+<td title='vendorLogin.Slots.BlockSlotSingle()'><b>BlockSlotSingle</b><br>Test class: vendorLogin.Slots</td>
+<td></td>
+<td>11</td>
+<td>vendorLogin.Slots@65c7a252</td></tr>
+<tr>
+<td title='vendorLogin.Offers.ActionButtonForHappyHours()'><b>ActionButtonForHappyHours</b><br>Test class: vendorLogin.Offers</td>
+<td></td>
+<td>7</td>
+<td>vendorLogin.Offers@793f29ff</td></tr>
+<tr>
+<td title='vendorLogin.PYSDashBoard.LastTwoWeeksVerify()'><b>LastTwoWeeksVerify</b><br>Test class: vendorLogin.PYSDashBoard</td>
+<td></td>
+<td>2</td>
+<td>vendorLogin.PYSDashBoard@75d3a5e0</td></tr>
+<tr>
+<td title='vendorLogin.Offers.ActionButtonForAdjacentOffer()'><b>ActionButtonForAdjacentOffer</b><br>Test class: vendorLogin.Offers</td>
+<td></td>
+<td>7</td>
+<td>vendorLogin.Offers@793f29ff</td></tr>
+<tr>
+<td title='vendorLogin.PYSDashBoard.ChangePassEmptyCurrentPassField()'><b>ChangePassEmptyCurrentPassField</b><br>Test class: vendorLogin.PYSDashBoard</td>
+<td></td>
+<td>3</td>
+<td>vendorLogin.PYSDashBoard@75d3a5e0</td></tr>
+<tr>
+<td title='vendorLogin.Offers.ActionButtonForSlotOffer()'><b>ActionButtonForSlotOffer</b><br>Test class: vendorLogin.Offers</td>
+<td></td>
+<td>7</td>
+<td>vendorLogin.Offers@793f29ff</td></tr>
+<tr>
+<td title='vendorLogin.Offers.ViewOfferSlotOfferUpcoming()'><b>ViewOfferSlotOfferUpcoming</b><br>Test class: vendorLogin.Offers</td>
+<td></td>
+<td>2</td>
+<td>vendorLogin.Offers@793f29ff</td></tr>
+<tr>
+<td title='vendorLogin.AvailBookings.AvailBookings3()'><b>AvailBookings3</b><br>Test class: vendorLogin.AvailBookings</td>
+<td></td>
+<td>19</td>
+<td>vendorLogin.AvailBookings@563f38c4</td></tr>
+<tr>
+<td title='vendorLogin.Offers.ViewOfferAdjacentOfferExpired()'><b>ViewOfferAdjacentOfferExpired</b><br>Test class: vendorLogin.Offers</td>
+<td></td>
+<td>2</td>
+<td>vendorLogin.Offers@793f29ff</td></tr>
+<tr>
+<td title='vendorLogin.PYSDashBoard.ChangePassEmptyNewPassField()'><b>ChangePassEmptyNewPassField</b><br>Test class: vendorLogin.PYSDashBoard</td>
+<td></td>
+<td>3</td>
+<td>vendorLogin.PYSDashBoard@75d3a5e0</td></tr>
+<tr>
+<td title='vendorLogin.PYSDashBoard.ClickingOnLastTwoWeeks()'><b>ClickingOnLastTwoWeeks</b><br>Test class: vendorLogin.PYSDashBoard</td>
+<td></td>
+<td>3</td>
+<td>vendorLogin.PYSDashBoard@75d3a5e0</td></tr>
+<tr>
+<td title='vendorLogin.Offers.ViewOfferHappyHoursUpcoming()'><b>ViewOfferHappyHoursUpcoming</b><br>Test class: vendorLogin.Offers</td>
+<td></td>
+<td>2</td>
+<td>vendorLogin.Offers@793f29ff</td></tr>
+<tr>
+<td title='vendorLogin.PYSDashBoard.DashboardBookingsDropDown1()'><b>DashboardBookingsDropDown1</b><br>Test class: vendorLogin.PYSDashBoard</td>
+<td></td>
+<td>6</td>
+<td>vendorLogin.PYSDashBoard@75d3a5e0</td></tr>
+<tr>
+<td title='vendorLogin.ImageGallery.UploadImage2()'><b>UploadImage2</b><br>Test class: vendorLogin.ImageGallery</td>
+<td></td>
+<td>15</td>
+<td>vendorLogin.ImageGallery@3e8c3cb</td></tr>
+<tr>
+<td title='vendorLogin.Offers.ActionButtonForFlatOffer()'><b>ActionButtonForFlatOffer</b><br>Test class: vendorLogin.Offers</td>
+<td></td>
+<td>7</td>
+<td>vendorLogin.Offers@793f29ff</td></tr>
+<tr>
+<td title='vendorLogin.Offers.ViewOfferHappyHoursExpired()'><b>ViewOfferHappyHoursExpired</b><br>Test class: vendorLogin.Offers</td>
+<td></td>
+<td>2</td>
+<td>vendorLogin.Offers@793f29ff</td></tr>
+<tr>
+<td title='vendorLogin.Offers.ActionButtonForFirstTimeOffer()'><b>ActionButtonForFirstTimeOffer</b><br>Test class: vendorLogin.Offers</td>
+<td></td>
+<td>6</td>
+<td>vendorLogin.Offers@793f29ff</td></tr>
+<tr>
+<td title='vendorLogin.PYSDashBoard.DashboardBookingsDropDown2()'><b>DashboardBookingsDropDown2</b><br>Test class: vendorLogin.PYSDashBoard</td>
+<td></td>
+<td>8</td>
+<td>vendorLogin.PYSDashBoard@75d3a5e0</td></tr>
+<tr>
+<td title='vendorLogin.Offers.ViewOfferHappyHoursActive()'><b>ViewOfferHappyHoursActive</b><br>Test class: vendorLogin.Offers</td>
+<td></td>
+<td>2</td>
+<td>vendorLogin.Offers@793f29ff</td></tr>
+<tr>
+<td title='vendorLogin.Offers.ViewOfferAdjacentOfferUpcoming()'><b>ViewOfferAdjacentOfferUpcoming</b><br>Test class: vendorLogin.Offers</td>
+<td></td>
+<td>2</td>
+<td>vendorLogin.Offers@793f29ff</td></tr>
+<tr>
+<td title='vendorLogin.PYSDashBoard.ChangePassEmptyConfirmPassField()'><b>ChangePassEmptyConfirmPassField</b><br>Test class: vendorLogin.PYSDashBoard</td>
+<td></td>
+<td>3</td>
+<td>vendorLogin.PYSDashBoard@75d3a5e0</td></tr>
+</table><p>
+</body>
+</html>
