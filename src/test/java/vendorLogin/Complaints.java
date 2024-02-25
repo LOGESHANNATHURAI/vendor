@@ -12,7 +12,7 @@ public class Complaints extends Baseclass {
 	public void weblogin() throws Throwable {
 		WebApplicationLogin();
 		HomePage HomePage = new HomePage(driver);
-		HomePage.getComplaintsbutton().click();
+		HomePage.getComplaintsbutton().clear();
 	}
 	
 @Test(priority = 1, enabled = true)
@@ -20,8 +20,8 @@ public class Complaints extends Baseclass {
 		HomePage HomePage = new HomePage(driver);
 		HomePage.getCreatecomplaintsoption().click();
 		CreateComplaintsPage CreateComplaintsPage = new CreateComplaintsPage(driver);
-		CreateComplaintsPage.getComplainttypedropdown().click();
-		CreateComplaintsPage.getBookingoption().click();
+		CreateComplaintsPage.getComplainttypedropdown().clear();
+		CreateComplaintsPage.getBookingoption().clear();
 		CreateComplaintsPage.getCommentbox().sendKeys(fileUtils.readTheDataFromPropertyFile("complaintcomment"));
 		TakeScreenShot("./screenshots/Complaints/001CreateComplaintTypeBookings1.png"); 
 //		CreateComplaintsPage.getSubmitbutton().click();
